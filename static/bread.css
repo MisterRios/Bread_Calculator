@@ -5,19 +5,24 @@ body {
 * {
 	text-align: center;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-
 }
+
 #text {
 	font-size: 18px;
-	
 }
 
-#dry {font-size: 18px;
+#dry {
+	font-size: 18px;
 }
 
-.results {font-size: 16px;
-	
+.results {
+	font-size: 16px;
 }
+
+.Nav_Links {
+	font-size: 10px;
+}
+
 
 button, .button {
   border-style: solid;
