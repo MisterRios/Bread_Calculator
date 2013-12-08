@@ -1,32 +1,46 @@
 body {
-	background-color: #FAD294;
+	background-color: #F3EFE0;
 }
 
 * {
 	text-align: center;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333;
 }
 
 #text {
-	font-size: 18px;
+	font-size: 24px;
+	font-weight: 900;
+	margin-left: 50px;
 }
 
 #dry {
 	font-size: 18px;
-}
+	font-weight: 900;
+	}
 
 #wet {
 	font-size: 18px;
+	font-weight: 900;
+}
+
+#spacer {
+	margin: 35px
 }
 
 .results {
-	font-size: 16px;
+	font-size: 22px;
+	font-weight: 900;
+	color: #3399FF;
 }
 
 .Nav_Links {
 	font-size: 10px;
 }
 
+input {
+	
+}
 
 button, .button {
   border-style: solid;
@@ -44,9 +58,9 @@ button, .button {
   padding-right: 1.5em;
   padding-bottom: 0.8125em;
   padding-left: 1.5em;
-  font-size: 0.75em;
-  background-color: #8D6447;
-  border-color: #BA5B3D;
+  font-size: 1em;
+  background-color: #217C7E;
+  border-color: #217C7E;
   color: white; }
   button:hover, button:focus, .button:hover, .button:focus {
     background-color: #2284a1; }
