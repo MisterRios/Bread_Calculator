@@ -3,22 +3,28 @@
 <head>
 <meta charset="utf-8">
 <link href="../static/bread.css" rel="stylesheet" type="text/css">
-<title>untitled</title>
+<title>Basic Bread Recipe</title>
 </head>
 
 <body>
-	<div class="Nav_Links">
-		<a href="breadcal.html">Baker's Percentages</a> | <a href="breadmaker.html">Recipe Calculator</a>
-		<br />
-		<br />
-		<br />
-	</div>
-	<div class="results">
-		<p>A basic recipe for bread is:</p>
-	    <p>Flour: {{flour}} grams</p>
-        <p>Water: {{water}} grams</p>
-        <p>Salt: {{salt}} grams</p>
-        <p>Yeast: {{yeast}} grams</p>
-	</div>
+    <div class="container">
+        <div class="Nav_Links">
+            <a href="breadcal.html">Baker's Percentages</a> | <a href="breadmaker.html">Recipe Calculator</a>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div class="results">
+            <div class="results_left">
+                <p>A basic recipe for bread is:</p>
+             </div>
+            <div class="results_right">
+                <p>Flour: {{flour}} grams</p>
+                <p>Water: {{water}} grams</p>
+                <p>Salt: {{salt}} grams</p>
+                <p>Yeast: {{yeast}} grams</p>
+             </div>
+        </div>
+    </div>
 </body>
 </html>

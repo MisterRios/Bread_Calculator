@@ -7,20 +7,24 @@
 </head>
 
 <body>
-	<div class="Nav_Links">
-		<a href="breadcal.html">Baker's Percentages</a> | <a href="breadmaker.html">Recipe Calculator</a>
-		<br />
-		<br />
-		<br />
-	</div>
-	<div class="results">
-		<p>Your dough weighs {{dough}} grams</p>
-		<p>Flour is {{flour_percent}}  &#37;</p>
-		<p>Hydration is {{water_percent | round(2)}} &#37;</p>
-		<p>Salt is {{salt_percent | round(2)}} &#37;</p>
-		<p>Yeast is {{yeast_percent | round(2)}} &#37;</p>
-	
-
+    <div class="container">
+        <div class="Nav_Links">
+            <a href="breadcal.html">Baker's Percentages</a> | <a href="breadmaker.html">Recipe Calculator</a>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div class="results">
+            <div class="results_left">
+                <p>Your dough weighs {{dough}} grams</p>
+            </div>
+            <div class="results_right">
+                <p>Flour is {{flour_percent}}  &#37;</p>
+                <p>Hydration is {{water_percent | round(2)}} &#37;</p>
+                <p>Salt is {{salt_percent | round(2)}} &#37;</p>
+                <p>Yeast is {{yeast_percent | round(2)}} &#37;</p>
+            </div>
+        </div>
  	</div>
 
 </body>

@@ -28,14 +28,46 @@ body {
 	margin: 35px
 }
 
+.container {
+    margin:auto;
+}
 .results {
-	font-size: 22px;
+    margin:auto;
+    height:303px;
+    width:980px;
+	background-color:#fff;
+}
+
+.results_left {
+    width:480px;
+    height:289px;
+    margin:6px 0 6px 6px;
+   
+    float:left;
+    font-size: 22px;
 	font-weight: 900;
 	color: #3399FF;
+    background-color:#F3EFE0;
+}
+
+.results_right {
+    width:480px;
+    height:289px;
+    margin:6px 6px 6px 0;
+    float:right;
+    font-size: 22px;
+	font-weight: 900;
+	color: #3399FF;
+    background-color:#F3EFE0;
 }
 
 .Nav_Links {
+    width:980px;
+    height:50px;
 	font-size: 10px;
+    margin:auto;
+    margin-top:20px;
+    
 }
 
 input {
