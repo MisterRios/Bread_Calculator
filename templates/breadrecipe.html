@@ -7,18 +7,23 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="Nav_Links">
-            <a href="breadcal.html">Baker's Percentages</a> | <a href="breadmaker.html">Recipe Calculator</a>
-            <br />
-            <br />
-            <br />
-        </div>
-        <div class="results">
-            <div class="results_left">
+    <div id="container">
+        <div id="header">
+            <div id="title">
+                <h1>Bread Tools</h1>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="./breadcal.html">Baker's Percentages</a></li>
+                    <li><a href="./breadmaker.html">Recipe Calculator</a></li>
+                </ul>
+            </div>
+        </div>    
+        <div id="results">
+            <div id="results_top">
                 <p>A basic recipe for bread is:</p>
              </div>
-            <div class="results_right">
+            <div id="results_bottom">
                 <p>Flour: {{flour}} grams</p>
                 <p>Water: {{water}} grams</p>
                 <p>Salt: {{salt}} grams</p>

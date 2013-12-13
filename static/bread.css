@@ -1,12 +1,109 @@
-body {
-	background-color: #F3EFE0;
+* {
+	margin:0;
+	padding:0;
+	background-color:#F3EFE0;
+	list-style-type:none;
 }
 
-* {
-	text-align: center;
+body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #333;
+	margin:auto;
+	background-color:#F3EFE0;
+	}
+
+#container {
+	background-color: #F3EFE0;
+	margin:auto;
+	width:980px;
 }
+
+#header {
+	height:70px;
+	padding:0 0 0 0px;
+	position:relative;
+}
+
+#title, #nav {
+	width:480px;
+	
+
+}
+
+#title{
+	
+	padding:20px 6px;
+	font-size:16px;
+	float:left;
+	text-align:left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	position:relative;
+	
+}
+
+#nav {
+	
+	font-size: 12px;
+	padding:30px 0;
+	float:left;
+	position:relative;
+	right:0px;
+	text-decoration:none;
+}
+
+#nav li {
+	font-size:16px;
+	text-align:center;
+	text-decoration:none;
+	margin:0 5px;
+	float:left;
+}
+
+#nav li a:hover {
+	color:#000;
+}
+
+
+
+#results {
+	text-align:center;
+	margin:auto;
+	margin-top:32px;
+	
+	height:303px;
+	width:980px;
+	background-color:#fff;
+	
+	
+}
+#results_top, #results_bottom {
+	width:481px;
+	height:286px;
+	padding-top:6px;
+
+}
+
+#results_top {
+	
+	margin:6px 0 6px 6px;
+	float:left;
+	font-size: 22px;
+	font-weight: 900;
+	color: #3399FF;
+	position:relative;
+}
+
+#results_bottom {
+	
+	margin:6px
+;
+	float:right;
+	font-size: 22px;
+	font-weight: 900;
+	color: #3399FF;
+	background-color:#F3EFE0;
+}
+
 
 #text {
 	font-size: 24px;
@@ -28,73 +125,34 @@ body {
 	margin: 35px
 }
 
-.container {
-    margin:auto;
-}
-.results {
-    margin:auto;
-    height:303px;
-    width:980px;
-	background-color:#fff;
-}
 
-.results_left {
-    width:480px;
-    height:289px;
-    margin:6px 0 6px 6px;
-   
-    float:left;
-    font-size: 22px;
-	font-weight: 900;
-	color: #3399FF;
-    background-color:#F3EFE0;
-}
-
-.results_right {
-    width:480px;
-    height:289px;
-    margin:6px 6px 6px 0;
-    float:right;
-    font-size: 22px;
-	font-weight: 900;
-	color: #3399FF;
-    background-color:#F3EFE0;
-}
-
-.Nav_Links {
-    width:980px;
-    height:50px;
-	font-size: 10px;
-    margin:auto;
-    margin-top:20px;
-    
-}
 
 input {
 	
 }
 
 button, .button {
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0 0 1.25em;
-  position: relative;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  padding-top: 0.75em;
-  padding-right: 1.5em;
-  padding-bottom: 0.8125em;
-  padding-left: 1.5em;
-  font-size: 1em;
-  background-color: #217C7E;
-  border-color: #217C7E;
-  color: white; }
-  button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #2284a1; }
-  button:hover, button:focus, .button:hover, .button:focus {
-    color: white; }
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
+font-family: inherit;
+font-weight: bold;
+line-height: 1;
+margin: 0 0 1.25em;
+position: relative;
+text-decoration: none;
+text-align: center;
+display: inline-block;
+padding-top: 0.75em;
+padding-right: 1.5em;
+padding-bottom: 0.8125em;
+padding-left: 1.5em;
+font-size: 1em;
+background-color: #217C7E;
+border-color: #217C7E;
+color: white; }
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color: #2284a1; }
+button:hover, button:focus, .button:hover, .button:focus {
+	color: white; }
+	
