@@ -45,7 +45,6 @@ body {
 	font-size: 12px;
 	float:right;
 	position:relative;
-	right:0px;
 	text-decoration:none;
 }
 
@@ -53,14 +52,14 @@ body {
 	font-size:16px;
 	text-align:center;
 	text-decoration:none;
-	margin:0 10px;
-	float:left;
+	margin:0 6px;
+	float:right;
 	font-weight:bold;
 	}
 
 #nav li a {
 	color:#755C3B;
-	padding:0 10px;
+	padding:0 8px 0 0;
 }
 
 #nav li a:hover {
@@ -69,7 +68,7 @@ body {
 
 
 
-#results {
+#content {
 	text-align:center;
 	margin:auto;
 	margin-top:40px;
@@ -80,18 +79,24 @@ body {
 	
 	
 }
-#results_top, #results_bottom {
-	padding-top:12px;
+#top_one, #top_two, #bottom {
+	padding-top:10px;
 	font-size: 22px;
 	color: #342A14;
 }
 
-#results_top {
-	height:64px;
+#top_one {
+	padding-top:24px;
+	height:52px;
 	position:relative;
 }
 
-#results_bottom {
+#top_two {
+	height:66px;
+	position:relative;
+}
+
+#bottom {
 	padding-top:34px;
 	height:284px;
 	margin-top:6px;
@@ -127,6 +132,7 @@ input {
 .form{
 	background-color:#fff;
 	width:90px;
+	height: 2em;
 }
 
 

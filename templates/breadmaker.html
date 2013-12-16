@@ -4,26 +4,37 @@
 <title>Bread at 65 Percent</title>
 </header>
 <body>
+	<div id="container">
+        <div id="header">
+            <div id="title">
+                <h1>Bread Tools</h1>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="./breadcal.html">Baker's Percentages</a></li>
+                    <li>Recipe Calculator</li>
+                </ul>
+            </div>
+        </div>   
+        
+		<div id="content">
+            <div id="top_one">
+                <p>So you want to make some typical bread?</p>
+             </div>
+            <div id="bottom">
+               <p>Just input how much Flour you have:</p>
+			
+				<br />
+				<form action="/breadrecipe.html" method="post">
+					<p>Flour:  <input class="form" type="Number" name="flour" value="" /> grams</p>
+					<br />
 	
-	<div class="Nav_Links">
-	<a href="breadcal.html">Baker's Percentages</a> | Recipe Calculator
-		<br />
-		<br />
-		</div>
-	<div id="text">
-		<p>So you want to make some typical bread, eh?</p>
-		<p>Just input how much Flour you have:</p>
-		</div>
-	<div id="spacer">
-		</div>
-	<form action="/breadrecipe.html" method="post">
-	<div id="dry"><p>Flour:  <input type="Number" name="flour" value="" /> grams</p>
-		</div>
-	<div id="spacer">
-		</div>
-	<div>
-		<input class= "button" type="submit" value="Calculate!"></input>
-		</div>
+					<input class= "button" type="submit" value="Calculate!"></input>
+            </div>
+        </div>
+	
+		
+		
 
 
 </body>
