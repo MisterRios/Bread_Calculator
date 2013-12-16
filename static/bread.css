@@ -3,35 +3,33 @@
 	padding:0;
 	background-color:#F3EFE0;
 	list-style-type:none;
+	text-decoration:none;
 }
 
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #333;
+	color: #342A14;
 	margin:auto;
 	background-color:#F3EFE0;
+	font-weight: 900;
 	}
 
 #container {
-	background-color: #F3EFE0;
 	margin:auto;
-	width:980px;
+	width:650px;
 }
 
 #header {
-	height:70px;
+	height:40px;
 	padding:0 0 0 0px;
 	position:relative;
 }
 
 #title, #nav {
-	width:480px;
-	
-
 }
 
 #title{
-	
+	width: 236px;
 	padding:20px 6px;
 	font-size:16px;
 	float:left;
@@ -42,10 +40,10 @@ body {
 }
 
 #nav {
-	
+	margin-top:35px;
+	width: 400px;
 	font-size: 12px;
-	padding:30px 0;
-	float:left;
+	float:right;
 	position:relative;
 	right:0px;
 	text-decoration:none;
@@ -55,8 +53,14 @@ body {
 	font-size:16px;
 	text-align:center;
 	text-decoration:none;
-	margin:0 5px;
+	margin:0 10px;
 	float:left;
+	font-weight:bold;
+	}
+
+#nav li a {
+	color:#755C3B;
+	padding:0 10px;
 }
 
 #nav li a:hover {
@@ -68,40 +72,30 @@ body {
 #results {
 	text-align:center;
 	margin:auto;
-	margin-top:32px;
-	
-	height:303px;
-	width:980px;
+	margin-top:40px;
+	padding:6px;
+	height:400px;
+	width:638px;
 	background-color:#fff;
 	
 	
 }
 #results_top, #results_bottom {
-	width:481px;
-	height:286px;
-	padding-top:6px;
-
+	padding-top:12px;
+	font-size: 22px;
+	color: #342A14;
 }
 
 #results_top {
-	
-	margin:6px 0 6px 6px;
-	float:left;
-	font-size: 22px;
-	font-weight: 900;
-	color: #3399FF;
+	height:64px;
 	position:relative;
 }
 
 #results_bottom {
+	padding-top:34px;
+	height:284px;
+	margin-top:6px;
 	
-	margin:6px
-;
-	float:right;
-	font-size: 22px;
-	font-weight: 900;
-	color: #3399FF;
-	background-color:#F3EFE0;
 }
 
 
@@ -128,8 +122,13 @@ body {
 
 
 input {
-	
 }
+
+.form{
+	background-color:#fff;
+	width:90px;
+}
+
 
 button, .button {
 border-style: solid;
@@ -138,7 +137,7 @@ cursor: pointer;
 font-family: inherit;
 font-weight: bold;
 line-height: 1;
-margin: 0 0 1.25em;
+margin: 2em auto 1.25em;
 position: relative;
 text-decoration: none;
 text-align: center;
@@ -148,11 +147,11 @@ padding-right: 1.5em;
 padding-bottom: 0.8125em;
 padding-left: 1.5em;
 font-size: 1em;
-background-color: #217C7E;
-border-color: #217C7E;
+background-color: #755C3B;
+border-color: #755C3B;
 color: white; }
 button:hover, button:focus, .button:hover, .button:focus {
-	background-color: #2284a1; }
+	background-color: #A37E58; }
 button:hover, button:focus, .button:hover, .button:focus {
 	color: white; }
 	
