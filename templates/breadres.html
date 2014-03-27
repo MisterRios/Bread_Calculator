@@ -1,43 +1,30 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<link href="../static/bread.css" rel="stylesheet" type="text/css">
-<title>Bread Calculator Results</title>
-</head>
+{% extends "layout.html" %}
 
-<body>
-	<div id="container">
-		<div id="header">
-			<div id="title">
-				<h1>Bread Tools</h1>
-			</div>
-			<div id="nav">
-				<ul>
-					<li><a href="./breadcal.html">Baker's Percentages</a></li>
-					<li><a href="./breadmaker.html">Recipe Calculator</a></li>
-				</ul>
-			</div>
-			
-		</div>
-		<div id="content">
-			<div id="top_two">
-				<p>Your dough weighs:</p><p>
-				{{dough}} grams</p>
-			</div>
-			<div id="bottom">
-				<div>
-					<p>Your percentages are:</p>
-				</div>
-				<div>
-					<p>Flour: {{flour_percent}}  &#37;</p>
-					<p>Hydration: {{water_percent | round(2)}} &#37;</p>
-					<p>Salt: {{salt_percent | round(2)}} &#37;</p>
-					<p>Yeast: {{yeast_percent | round(2)}} &#37;</p>
-				</div>
-			</div>
-		</div>
+{% block title %}
+    Bread Calculator Results
+{% endblock %}
+
+{% block nav %}
+	<li><a href="./breadcal.html">Baker's Percentages</a></li>
+	<li><a href="./breadmaker.html">Recipe Calculator</a></li>   
+{% endblock %}
+
+{% block top %}
+    <p>Your dough weighs:</p><p>
+	{{dough}} grams</p>
+{% endblock %}
+
+{% block body %}
+    <div>
+		<p>Your percentages are:</p>
 	</div>
+	<div>
+		<p>Flour: {{flour_percent}}  &#37;</p>
+		<p>Hydration: {{water_percent | round(2)}} &#37;</p>
+		<p>Salt: {{salt_percent | round(2)}} &#37;</p>
+		<p>Yeast: {{yeast_percent | round(2)}} &#37;</p>
+	</div>
+{% endblock %}
 
-</body>
-</html>
+
+	

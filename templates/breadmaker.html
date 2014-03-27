@@ -1,42 +1,34 @@
-<html>
-<header>
-<link href="../static/bread.css" rel="stylesheet" type="text/css">
-<title>Bread at 65 Percent</title>
-</header>
-<body>
-	<div id="container">
-        <div id="header">
-            <div id="title">
-                <h1>Bread Tools</h1>
-            </div>
-            <div id="nav">
-                <ul>
-                    <li><a href="./breadcal.html">Baker's Percentages</a></li>
-                    <li>Recipe Calculator</li>
-                </ul>
-            </div>
-        </div>   
-        
-		<div id="content">
-            <div id="top_one">
-                <p>So you want to make some typical bread?</p>
-             </div>
-            <div id="bottom">
-               <p>Just input how much Flour you have:</p>
-			
-				<br />
-				<form action="/breadrecipe.html" method="post">
-					<p>Flour:  <input class="form" type="Number" name="flour" value="" /> grams</p>
-					<br />
-	
-					<input class= "button" type="submit" value="Calculate!"></input>
-            </div>
-        </div>
-	
-		
-		
+{% extends "layout.html" %}
+
+{% block title %}
+    Bread at 65 Percent
+{% endblock %}
+
+{% block nav %}
+    <li><a href="./breadcal.html">Baker's Percentages</a></li>
+    <li>Recipe Calculator</li>
+{% endblock %}
+    
+{% block top %}
+      <p>So you want to make some typical bread?</p>
+{% endblock %}
+
+{% block body %}
+    <p>Just input how much Flour you have:</p>
+            
+                <br />
+                <form action="/breadrecipe.html" method="post">
+                    <p>Flour:  <input class="form" type="Number" name="flour" value="" /> grams</p>
+                    <br />
+    
+                    <input class= "button" type="submit" value="Calculate!"></input>
+{% endblock %}
+
+    
 
 
-</body>
-
-</html>
+                    
+               
+              
+            
+                

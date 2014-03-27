@@ -1,35 +1,21 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<link href="../static/bread.css" rel="stylesheet" type="text/css">
-<title>Basic Bread Recipe</title>
-</head>
+{% extends "layout.html" %}
 
-<body>
-    <div id="container">
-        <div id="header">
-            <div id="title">
-                <h1>Bread Tools</h1>
-            </div>
-            <div id="nav">
-                <ul>
-                    <li><a href="./breadcal.html">Baker's Percentages</a></li>
-                    <li><a href="./breadmaker.html">Recipe Calculator</a></li>
-                </ul>
-            </div>
-        </div>    
-        <div id="content">
-            <div id="top_one">
-                <p>A basic recipe for bread is:</p>
-             </div>
-            <div id="bottom">
-                <p>Flour: {{flour}} grams</p>
-                <p>Water: {{water}} grams</p>
-                <p>Salt: {{salt}} grams</p>
-                <p>Yeast: {{yeast}} grams</p>
-             </div>
-        </div>
-    </div>
-</body>
-</html>
+{% block title %}
+    Basic Bread Recipe
+{% endblock %}
+    
+{% block nav %}
+        <li><a href="./breadcal.html">Baker's Percentages</a></li>
+        <li><a href="./breadmaker.html">Recipe Calculator</a></li>      
+{% endblock %}
+
+{% block top %}
+     <p>A basic recipe for bread is:</p>
+{% endblock %}
+
+{% block body %}
+    <p>Flour: {{flour}} grams</p>
+    <p>Water: {{water}} grams</p>
+    <p>Salt: {{salt}} grams</p>
+    <p>Yeast: {{yeast}} grams</p>
+{% endblock %}

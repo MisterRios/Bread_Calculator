@@ -1,46 +1,32 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<link href="../static/bread.css" rel="stylesheet" type="text/css">
-<title>Bread Calculator</title>
-</head>
+{% extends "layout.html" %}
 
-<body>
-	<div id="container">
-		<div id="header">
-            <div id="title">
-                <h1>Bread Tools</h1>
-            </div>
-            <div id="nav">
-                <ul>
-                    <li>Baker's Percentages</li>
-                    <li><a href="./breadmaker.html">Recipe Calculator</a></li>
-                </ul>
-            </div>
-        </div> 
+{% block title %}
+	Bread Calculator
+{% endblock %}
+
+{% block nav %}
+            <li>Baker's Percentages</li>
+            <li><a href="./breadmaker.html">Recipe Calculator</a></li>    
+{% endblock %}
+
+{% block top %}
+	<p>Enter your ingredient amounts</p>
+	<p>to calculate your Baker's Percentages</p>
+{% endblock %}
+
+{% block body %}
+	<div id="form">
+		<form action="/breadres.html" method="post">
+		
+			<p>Flour:  <input class="form" type="number" name="flour" value="" /></p>
+			<p>Water:  <input class="form" type="number" name="water" value="" /></p>
+			<p>Salt:  <input class="form" type="number" name="salt" value="" /></p>
+			<p>Yeast:  <input class="form" type="number" name="yeast" value="" /></p>
+			</div>
+			<div id="button">
+				<p><input class="button" type="submit" value="Calculate!"></input></p>
+			</div>
+		</form>
+	</div>
+{% endblock %}
 	
-		<div id="content">
-			<div id="top_two">
-				<p>Enter your ingredient amounts</p>
-				<p>to calculate your Baker's Percentages</p>	
-			</div>
-			
-			<div id="bottom">
-				<div id="form">
-				<form action="/breadres.html" method="post">
-					
-					<p>Flour:  <input class="form" type="number" name="flour" value="" /></p>
-					<p>Water:  <input class="form" type="number" name="water" value="" /></p>
-					<p>Salt:  <input class="form" type="number" name="salt" value="" /></p>
-					<p>Yeast:  <input class="form" type="number" name="yeast" value="" /></p>
-					</div>
-					<div id="button">
-						<p><input class="button" type="submit" value="Calculate!"></input></p>
-					</div>
-			</div>
-			</div>
-		</div>
-		</div>
-</body>
-</html>
